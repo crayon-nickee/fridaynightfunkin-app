@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <title>fridaynightfunkin' - FNF online unblocked</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow, noodp, noydir" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="requiresActiveX=true,IE=Edge,chrome=1" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="fridaynightfunkin Game">
+    <meta http-equiv="Content-Language" content="en" />
+    <meta property="og:type" content="game">
+    <style type="text/css">
+        *{margin:0;padding:0;box-sizing:border-box;font-family:Roboto, Verdana, Geneva, Tahoma, sans-serif}
+        html,body{width:100%;height:100%;background:#0B0B0F}
+        .game-container{position:relative;height:100%}
+        .img-bg{display:block;max-width:100%;width:100%;height:100%;position:absolute;inset:0;object-fit:cover;filter:blur(20px)}
+        .facade-content{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transition:opacity .3s ease-out;background:rgba(11,11,15,.55)}
+        .facade-content-center{z-index:10;padding:0 15px;text-align:center}
+        .game-title{display:block;margin-bottom:15px;font-size:30px;line-height:48px;font-weight:800;color:#EDEDF0;text-transform:capitalize}
+        @media (min-width:1024px){.game-title{font-size:64px;line-height:1}}
+        .game-img{display:block;max-width:100%;height:auto;margin:0 auto 15px;border-radius:2px}
+        @media (max-width:640px){.game-img{width:120px;height:120px}}
+        .game-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-weight:900;height:64px;min-height:64px;padding:0 40px;font-size:24px;cursor:pointer;color:#EDEDF0;background:linear-gradient(135deg,#8B5CF6,#E11D48);border:2px solid #7F1D1D;box-shadow:0 4px 12px rgba(139,92,246,0.35);border-radius:32px;transition:all .2s ease;animation:floatPulse 2.4s ease-in-out infinite}
+        .game-btn:hover{transform:translateY(-2px) scale(1.05);background:linear-gradient(135deg,#7C3AED,#BE123C);box-shadow:0 8px 20px rgba(225,29,72,0.45)}
+        .game-btn:active{transform:translateY(0) scale(1.0)}
+        @keyframes floatPulse{0%{transform:translateY(0) scale(1)}50%{transform:translateY(-6px) scale(1.03)}100%{transform:translateY(0) scale(1)}}
+        .game-btn-flex{display:flex;align-items:center;gap:.5rem}
+        .game-btn-flex-svg{display:block;width:2rem;height:2rem}
+        .loading_wrap{position:absolute;inset:0;z-index:20;display:flex;align-items:center;justify-content:center}
+        .backdrop-blur-sm{position:absolute;inset:0;background-color:#000c;backdrop-filter:blur(4px)}
+        .loading_box{position:relative;display:flex;flex-direction:column;align-items:center}
+        .loading-spinner{width:128px;height:128px;color:#8B5CF6;position:relative}
+        .loading-spinner::before{content:'';position:absolute;inset:0;border:8px solid rgba(139,92,246,0.25);border-top:8px solid #E11D48;border-radius:50%;animation:spin 1s linear infinite}
+        @keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+        .loading_text{margin-top:24px;font-size:20px;line-height:28px;font-weight:600;color:#EDEDF0}
+        .hidden{display:none}
+        body.hide_footer{height:calc(100% + 41px)!important;overflow:hidden!important}
+    </style>
+</head>
+<body>
+    <div id="preloading-game">
+        <img id="background_img" class="img-bg" src="https://cdn.fridaynightfunkin.app/images/logo.webp" alt="fridaynightfunkin background">
+        <div id="infor_box" class="facade-content">
+            <div class="facade-content-center">
+                <img class="game-img" style="border-radius: 10px" src="https://cdn.fridaynightfunkin.app/images/fridaynightfunkin-180.webp" title="fridaynightfunkin" alt="fridaynightfunkin guessing game">
+                <button class="game-btn" onClick="loading_game(true); requestInternalFullscreen();" aria-label="Play Game">
+                    <span class="game-btn-flex">Play Now<svg xmlns="http://www.w3.org/2000/svg" class="game-btn-flex-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div id="loading_wrap" class="loading_wrap hidden">
+            <div class="backdrop-blur-sm"></div>
+            <div class="loading_box">
+                <div class="loading-spinner"></div>
+                <p class="loading_text">Loading...</p>
+                <p class="loading_text">Friday Night Funkin.app</p>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+let game_type = "IN_GAME";
+let url_game = "https://fnf.kdata1.com/2024/fnf/5201/";
+let check_load_now = "";
+let check_referrer = "";
+
+document.addEventListener('DOMContentLoaded', function() {
+  if ((game_type != 'EXTERNAL' && check_load_now) || game_type == 'IFRAME_HTML') {
+    loading_game(false)
+  }
+});
+
+function loading_game(check) {
+  if (check && document.getElementById('infor_box')) {
+    document.getElementById('infor_box').remove();
+  }
+  if (document.getElementById('loading_wrap')) {
+    document.getElementById('loading_wrap').classList.remove('hidden');
+  }
+
+  try {
+    var endpoint = '/api/submitPlaytimes';
+    var payload = 'id=1';
+    if (navigator.sendBeacon) {
+      var beaconData = new Blob([payload], { type: 'application/x-www-form-urlencoded' });
+      navigator.sendBeacon(endpoint, beaconData);
+    } else {
+      fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: payload }).catch(function(){});
+    }
+  } catch(e){}
+
+  start_game_frame();
+}
+
+function hideLoading() {
+  if (document.getElementById('background_img')) {
+    document.getElementById('background_img').remove();
+  }
+  if (document.getElementById('loading_wrap')) {
+    document.getElementById('loading_wrap').remove();
+  }
+}
+
+function start_game_frame() {
+  let frame_game = document.createElement('iframe');
+  frame_game.setAttribute('id', 'iframehtml5');
+  frame_game.setAttribute('width', '100%');
+  frame_game.setAttribute('height', '100%');
+  frame_game.setAttribute('frameborder', '0');
+  frame_game.setAttribute('border', '0');
+  frame_game.setAttribute('scrolling', 'auto');
+  frame_game.setAttribute('class', 'iframe-default');
+  frame_game.setAttribute('allowfullscreen', 'true');
+  frame_game.setAttribute('src', url_game);
+  frame_game.setAttribute('title', "fridaynightfunkin online");
+  if (check_referrer) {
+    frame_game.setAttribute('referrerPolicy', 'no-referrer');
+  }
+  document.body.append(frame_game);
+  frame_game.addEventListener('load', hideLoading, { once: true });
+  setTimeout(hideLoading, 15000);
+
+  if (game_type === 'HIDE_FOOTER') {
+    document.querySelector('body').className = "hide_footer";
+  }
+}
+function requestInternalFullscreen(){
+  try{
+    var topDoc = (window.top && window.top.document) ? window.top.document : document;
+    var section = topDoc.getElementById('play-fridaynightfunkin-online');
+    if(section && !section.classList.contains('internal-fullscreen-section')){
+      section.classList.add('internal-fullscreen-section');
+    }
+    setTimeout(function(){
+      var controls = topDoc.getElementById('game-controls');
+      if(controls && window.top){ window.top.document.documentElement.style.setProperty('--controls-h', Math.max(controls.offsetHeight||0, 72) + 'px'); }
+    }, 50);
+  }catch(e){}
+}
+
+function openInNewWindow() {
+  let height2 = window.innerHeight || 600;
+  let width2 = window.innerWidth || 600;
+  window.open(url_game, "Friday Night Funkin", "width=" + width2 + ",height=" + height2);
+}
+    </script>
+</body>
+</html>

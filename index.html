@@ -1,0 +1,551 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><link rel="preconnect" href="https://cdn.fridaynightfunkin.app"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>FNF Online Unblocked Free | Friday Night Funkin'</title><meta name="description" content="Play FNF Online Unblocked free (Friday Night Funkin) - No download needed! Master rhythm battles, hit every beat, prove your rap skills."><meta name="keywords" content="FNF Online,FNF Unblocked,Friday Night Funkin"><link rel="canonical" href="https://fridaynightfunkin.app/"><link rel="alternate" hreflang="en" href="https://fridaynightfunkin.app/"><link rel="alternate" hreflang="es" href="https://fridaynightfunkin.app/es/"><link rel="alternate" hreflang="br" href="https://fridaynightfunkin.app/br/"><link rel="alternate" hreflang="fr" href="https://fridaynightfunkin.app/fr/"><link rel="alternate" hreflang="de" href="https://fridaynightfunkin.app/de/"><link rel="alternate" hreflang="zh" href="https://fridaynightfunkin.app/zh/"><link rel="alternate" hreflang="x-default" href="https://fridaynightfunkin.app/"><link rel="preload" as="image" href="https://cdn.fridaynightfunkin.app/images/logo.webp" imagesrcset="https://cdn.fridaynightfunkin.app/images/logo.webp 1x" fetchpriority="high" importance="high"><link rel="prefetch" href="/play.html"><link rel="icon" href="/favicon.png" type="image/png"><link rel="icon" href="/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="/template/default/css/twmin.css"><meta property="og:type" content="website"><meta property="og:site_name" content="Friday Night Funkin'"><meta property="og:title" content="FNF Online Unblocked Free | Friday Night Funkin'"><meta property="og:description" content="Play FNF Online Unblocked free (Friday Night Funkin) - No download needed! Master rhythm battles, hit every beat, prove your rap skills."><meta property="og:url" content="https://fridaynightfunkin.app/"><meta property="og:image" content="https://cdn.fridaynightfunkin.app/images/png/fridaynightfunkin.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@Friday Night Funkin'" /><meta name="twitter:creator" content="@Friday Night Funkin'" /><link rel="apple-touch-icon" sizes="180x180" href="https://cdn.fridaynightfunkin.app/images/png/fridaynightfunkin-180.png"><meta name="twitter:title" content="FNF Online Unblocked Free | Friday Night Funkin'" /><meta name="twitter:url" content="https://fridaynightfunkin.app/" /><meta name="twitter:image" content="https://cdn.fridaynightfunkin.app/images/png/fridaynightfunkin.png" /><meta name="twitter:description" content="Play FNF Online Unblocked free (Friday Night Funkin) - No download needed! Master rhythm battles, hit every beat, prove your rap skills."><meta name="twitter:card" content="summary" /><meta name="mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Friday Night Funkin'"><style>
+    :root{--accent:#8B5CF6;--accent-2:#E11D48;--bg:#0B0B0F;--text:#EDEDF0;--card-bg:#131320;--card-border:#2A2A3B;--surface:#8B5CF6;--surface-contrast:#0B0B0F;--text-secondary:#B3B7C5;--brand-green:#7C3AED;--brand-yellow:#E11D48;--heading-color:#F3F4F6}
+    body,html{height:100%;margin:0;padding:0}
+    body{font-family:'Comic Sans MS','Marker Felt','Bubblegum Sans','Fredoka One','Quicksand','Microsoft YaHei',cursive,fantasy,sans-serif;background:var(--bg);color:var(--text);font-size:18px;line-height:1.6;font-weight:600;visibility:hidden}
+    body.loaded{visibility:visible}
+    img{max-width:100%;height:auto;display:block}
+    .resp-iframe{position:relative;width:100%;padding-top:56.25%}
+    .resp-iframe>iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:.5rem}
+    :where(article,aside,nav,section) h1{font-size:1.5rem;line-height:2rem}
+    
+    .expanded-mode {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        z-index: 9999 !important;
+        background: var(--bg) !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: none !important;
+    }
+    
+    .expanded-mode > div {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .expanded-mode #game-card {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        max-width: none !important;
+        max-height: none !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+    }
+    
+    .expanded-mode #game-frame-wrap {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: calc(100vh - 80px) !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: none !important;
+    }
+    
+    .expanded-mode #game-controls {
+        position: fixed !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100vw !important;
+        height: 80px !important;
+        background: var(--card-bg) !important;
+        border-top: 2px solid var(--card-border) !important;
+        padding: 15px 20px !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+    
+    body.game-expanded > *:not(main) {
+        display: none !important;
+    }
+    
+    body.game-expanded main > *:not(#play-fridaynightfunkin-online) {
+        display: none !important;
+    }
+    
+    body.game-expanded main {
+        max-width: none !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    body.game-expanded {
+        overflow: hidden !important;
+    }
+
+        h1,h2,h3,h4,h5,h6{font-family:'Comic Sans MS','Marker Felt','Bubblegum Sans','Fredoka One','Quicksand','Microsoft YaHei','微软雅黑',cursive,fantasy,sans-serif;font-weight:800;color:var(--heading-color)}
+        h2{background:linear-gradient(135deg,#8B5CF6,#E11D48,#3B82F6);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+        h1{font-size:2.25rem}h2{font-size:2rem}h3{font-weight:600;font-size:1.35rem}
+        .heading-font{font-family:inherit;font-weight:800;color:var(--heading-color)}
+        .faq-section h3{font-size:1.2rem;line-height:1.35}
+        @media (min-width:1024px){.faq-section h3{font-size:1.3rem}}
+        a{color:inherit;transition:color .2s ease}
+        a:hover{color:var(--brand-yellow)}
+        .btn{transition:transform .15s ease,opacity .15s ease}
+        .btn:active{transform:scale(.98)}
+        .card{background:var(--card-bg);backdrop-filter:saturate(130%) blur(4px);border:1px solid var(--card-border);border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+        .soft-surface{background:rgba(139,92,246,.12)}
+        header.site-header{border-bottom:1px solid var(--card-border)}
+        .brand-title{background:0 0!important;-webkit-background-clip:initial!important;background-clip:initial!important;-webkit-text-fill-color:initial!important;color:var(--text)!important}
+        #title-line{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+        #title-line #played-text{display:block;margin-left:0;margin-top:2px}
+        .gradient-text.brand-title{background:0 0!important;-webkit-background-clip:initial!important;background-clip:initial!important;-webkit-text-fill-color:initial!important;color:inherit!important}
+        .resp-iframe{position:relative;width:100%;padding-top:56.25%}
+        .resp-iframe>iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:.5rem}
+        @media (max-width:768px){.resp-iframe{padding-top:84.375%}}
+        .share-pop{position:absolute;right:0;top:3rem;z-index:40}
+        .star{cursor:pointer;transition:transform .12s ease}
+        .star:hover{transform:scale(1.05)}
+        .faq-section,.howto-section{content-visibility:auto;contain-intrinsic-size:900px}
+        .step-dot{display:inline-flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;border-radius:50%;background:var(--brand-yellow);color:#0a0a0a;font-weight:700;border:1px solid #7F1D1D;box-shadow:0 6px 16px rgba(225,29,72,.25)}
+        #avg-rating,#played-text{color:var(--text-secondary)!important}
+        .text-gray-300{color:var(--text-secondary)!important}
+        .btn{color:var(--text);font-weight:600}
+        .star svg{transition:fill .15s ease,stroke .15s ease}
+        .star svg path{transition:fill .15s ease,stroke .15s ease}
+        .btn.soft-surface{transition:background .2s ease,color .2s ease,transform .12s ease}
+        .btn.soft-surface:hover{background:var(--brand-yellow);color:var(--surface-contrast);border:1px solid #7F1D1D}
+        .howto-section .howto-step{align-items:center}
+        .howto-section .howto-divider{height:1px;background:var(--card-border)}
+        .howto-section .step-img{border:1px solid var(--card-border);width:300px;height:300px;object-fit:cover}
+        .howto-section .grid>article{display:flex;flex-direction:column;align-items:center;gap:1rem;text-align:center}
+        .howto-section .grid>article>.inline-flex{justify-content:center;gap:.5rem;text-align:center}
+        .howto-section .grid>article>div:not(.inline-flex),.howto-section .grid>article>p{text-align:left}
+        .language-selector{font-family:inherit}
+        .lang-btn{background:0 0;color:var(--text);border:1px solid var(--card-border);box-shadow:0 2px 8px rgba(0,0,0,.25);transition:all .3s cubic-bezier(.4,0,.2,1);font-weight:600}
+        .lang-btn:hover{background:rgba(139,92,246,.12);transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.3)}
+        .lang-btn.active .lang-arrow{transform:rotate(180deg)}
+        .lang-flag{font-size:1.1em;filter:drop-shadow(0 1px 2px rgba(0,0,0,.1))}
+        .lang-dropdown{background:var(--bg);border:1px solid var(--card-border);backdrop-filter:blur(10px);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+        .language-selector:hover .lang-dropdown{opacity:1;visibility:visible;transform:translateY(0)}
+        .lang-option{color:var(--text);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.06);position:relative;overflow:hidden;font-weight:500}
+        .lang-option:last-child{border-bottom:none}
+        .lang-option:hover{background:rgba(139,92,246,.08)!important;color:var(--text);transform:translateX(2px)}
+        .lang-option.active{background:rgba(225,29,72,.15);color:var(--text);font-weight:600}
+        .lang-option.active::after{content:'✓';position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--brand-yellow);font-weight:700}
+        .lang-emoji{font-size:1.2em;filter:drop-shadow(0 1px 2px rgba(0,0,0,.1))}
+        .lang-name{font-weight:500;transition:all .2s ease}
+        @media (max-width:640px){.lang-btn{padding:.5rem .75rem}.lang-text{display:none}.lang-flag{font-size:1.3em}.lang-dropdown{min-width:140px;right:-10px}.lang-option{padding:.75rem 1rem}.lang-name{font-size:.9rem}}
+        .howto-section .grid>article picture,.howto-section .grid>article>img{align-self:center}
+        @media(min-width:1024px){.howto-section .grid>article{flex-direction:column;align-items:center}}
+        .howto-section .grid>article picture,.howto-section .grid>article>img{max-width:220px;border:1px solid var(--card-border);border-radius:.5rem;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+        @media(min-width:1024px){.howto-section .grid>article picture,.howto-section .grid>article>img{max-width:300px}}
+        @media(min-width:1280px){.howto-section .grid>article picture,.howto-section .grid>article>img{max-width:360px}}
+        .howto-section .grid>article .heading-font{margin:0}
+        .howto-section .grid>article .step-dot{width:2rem;height:2rem}
+        .howto-section .grid>article+article{padding-top:1rem;margin-top:.5rem}
+        .faq-section details summary{display:flex;align-items:center;gap:.5rem;cursor:pointer}
+        .faq-section details summary h3{margin:0;line-height:1.4}
+        .faq-section details summary::-webkit-details-marker{display:none}
+        .faq-section details summary::marker{content:''}
+        .faq-section details summary::before{content:'';display:inline-block;width:.6rem;height:.6rem;border-right:2px solid currentColor;border-top:2px solid currentColor;transform:rotate(45deg);transition:transform .2s ease;margin-right:.1rem}
+        .faq-section details[open] summary::before{transform:rotate(135deg)}
+        .about-section h2,.faq-section h2,.features-section h2,.howto-section h2{margin-bottom:1.5rem;color:var(--heading-color)}
+        .howto-section h3{font-weight:800;letter-spacing:.01em}
+        .howto-section h3::after{content:"";display:block;width:64px;height:4px;margin:.4rem auto 0;background:var(--brand-yellow);border-radius:9999px;opacity:.95}
+        .features-section h3{font-weight:700}
+        .features-section h3{margin-bottom:.75rem}
+        .feature-card .icon-wrap{width:48px;height:48px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:rgba(139,92,246,.15);color:var(--brand-yellow);border:1px solid #4C1D95;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+        .feature-card .badge{min-width:28px;height:28px;border-radius:9999px;background:rgba(255,255,255,.08);display:inline-flex;align-items:center;justify-content:center;margin-left:.5rem;font-weight:700}
+        #back-to-top{position:fixed;right:20px;bottom:20px;width:48px;height:48px;display:none;display:none;align-items:center;justify-content:center;background:var(--card-bg);border:1px solid var(--card-border);color:var(--text);border-radius:9999px;box-shadow:var(--shadow);font-size:0;z-index:2147483600}
+        #back-to-top svg path{fill:currentColor}
+        .toc-toggle{position:fixed;right:20px;bottom:84px;width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--card-bg);border:1px solid var(--card-border);color:var(--text);border-radius:9999px;box-shadow:var(--shadow);font-size:0;z-index:2147483600}
+        .toc-toggle svg circle,.toc-toggle svg path,.toc-toggle svg rect{fill:currentColor}
+        .html-toc{position:fixed;right:20px;bottom:135px;z-index:2147483599;display:none}
+        .html-toc.open{display:block}
+        .html-toc-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:saturate(120%) blur(2px);z-index:49;display:none}
+        .html-toc.open .html-toc-backdrop{display:block}
+        .html-toc-pop{position:relative;z-index:50;min-width:260px;max-width:86vw;max-height:60vh;overflow:auto;background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+        .toc-header{padding:10px 12px 6px 12px;font-weight:600;color:var(--text)}
+        .toc-list{list-style:none;padding:4px 12px 12px 12px;margin:0}
+        .toc-item{margin:6px 0;display:flex;align-items:flex-start;gap:8px}
+        .toc-dot{display:inline-block;width:6px;height:6px;border-radius:9999px;background:var(--text);margin-top:10px;opacity:.8}
+        .toc-link{color:var(--text);text-decoration:none;line-height:1.5}
+        .html-toc.open .html-toc-backdrop{display:none!important}
+        .toast{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:9999;padding:15px 24px;border-radius:8px;background:rgba(0,0,0,.75);color:#fff;font-size:14px;opacity:0;transition:opacity .2s ease}
+        .toast.show{opacity:1}
+        .toast-success{background:rgba(16,185,129,.9)}
+        .toast-error{background:rgba(239,68,68,.95)}
+        @media(max-width:640px){#title-line{display:flex;flex-direction:column;align-items:flex-start;gap:4px}#title-line #played-text{margin-left:0;display:block}}
+        @media(max-width:640px){#game-controls{gap:10px}.heading-font.text-2xl{display:block}.heading-font.text-2xl+#played-text{display:block;margin-left:0}.heading-font+#played-text{display:block}.heading-font~#played-text{display:block}.heading-font+span#played-text{display:block}.heading-font+#played-text{margin-top:2px}.heading-font{white-space:normal}.heading-font+#played-text{white-space:normal}.heading-font+#played-text{line-height:1.4}#controls-actions{display:grid!important;grid-template-columns:repeat(3,1fr);gap:10px;width:100%}#controls-actions>a.btn,#controls-actions>button.btn{width:100%;justify-content:center}#controls-actions svg{margin:0 auto}}
+        @media(max-width:640px){.step-img{display:block!important;margin:0 auto!important;width:300px!important;height:300px!important;object-fit:cover!important}.about-section picture,.howto-section .grid>article picture{display:block!important;margin-left:auto!important;margin-right:auto!important;text-align:center!important;float:none!important}}
+        a:hover{color:var(--brand-yellow)!important}
+        .comments__form_submit{background:var(--brand-yellow)!important;color:var(--surface-contrast)!important;border:1px solid #7F1D1D!important;box-shadow:0 8px 18px rgba(0,0,0,.25)!important}
+        .comments__form_submit:hover{filter:brightness(1.05)}
+        .comments__form-input{background:rgba(19,19,32,.85)!important;border-color:var(--card-border)!important;color:var(--text)!important}
+        .comments__form-input::placeholder{color:#8E90A3!important}
+        .comments__form-input:focus{outline:2px solid var(--brand-yellow)!important;border-color:#7F1D1D!important}
+        #controls-actions .btn{border:1px solid var(--card-border)!important}
+        #game-card{border:1px solid var(--card-border)!important}
+        .about-section .card,.faq-section .card,.features-section .card,.howto-section .card{border:1px solid var(--card-border)!important;background:var(--card-bg)!important}
+        .brand-title,.site-title{background:linear-gradient(90deg,var(--brand-green),var(--brand-yellow))!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important}
+        .howto-section .grid>article{display:flex!important;flex-direction:column!important;align-items:center!important;gap:1rem!important}
+        .howto-section .grid>article>.inline-flex{order:1}
+        .howto-section .grid>article>div:not(.inline-flex),.howto-section .grid>article>p{order:3;text-align:left}
+        #controls-actions a.btn:hover,#controls-actions button.btn:hover,.btn.soft-surface:hover{color:var(--surface-contrast)!important}
+        .character-card{background:linear-gradient(135deg,#1A1A2E 0%,#16213E 50%,#0F3460 100%)!important;border:2px solid rgba(139,92,246,0.3)!important;transition:all 0.4s cubic-bezier(0.34,1.56,0.64,1)!important;position:relative;overflow:hidden}
+        .character-card::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(45deg,transparent 30%,rgba(139,92,246,0.1) 50%,transparent 70%);transform:translateX(-100%);transition:transform 0.6s ease;z-index:1}
+        .character-card:hover::before{transform:translateX(100%)}
+        .character-card:hover{transform:translateY(-8px) scale(1.02);border-color:var(--accent)!important;box-shadow:0 20px 40px rgba(139,92,246,0.4),0 0 30px rgba(225,29,72,0.2)!important}
+        .character-card > *{position:relative;z-index:2}
+        .character-img{border:3px solid rgba(225,29,72,0.4)!important;transition:all 0.3s ease!important;box-shadow:0 8px 20px rgba(0,0,0,0.3)}
+        .character-card:hover .character-img{border-color:var(--accent-2)!important;transform:scale(1.1) rotate(5deg);box-shadow:0 12px 30px rgba(225,29,72,0.5)}
+        .character-card .badge{background:linear-gradient(135deg,#E11D48,#8B5CF6)!important;color:#FFFFFF!important;font-weight:800!important;text-shadow:0 2px 4px rgba(0,0,0,0.5);animation:pulse 2s infinite}
+        .character-card h3{background:linear-gradient(135deg,#8B5CF6,#E11D48,#3B82F6);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:none!important}
+        @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+        .max-w-7xl{max-width:900px!important}
+        .max-w-prose{max-width:100%!important}
+        @media (max-width: 768px) {
+            .characters-section .grid-cols-2 {
+                grid-template-columns: 1fr !important;
+            }
+        }
+        .video-container {
+            transition: all 0.3s ease;
+        }
+        .play-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+        }
+        .play-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(220, 38, 38, 0.6);
+        }
+        .strategies-section .icon-wrap,
+        .music-section .icon-wrap,
+        .development-section .icon-wrap {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(139,92,246,.15);
+            color: var(--brand-yellow);
+            border: 1px solid #4C1D95;
+            box-shadow: 0 8px 20px rgba(0,0,0,.25);
+            font-size: 20px;
+        }
+        .footer-border {
+            border-color: var(--card-border) !important;
+        }
+        .song-names-container {
+            background: var(--fnf-gradient-3) !important;
+            border: 2px solid rgba(139,92,246,0.3) !important;
+            box-shadow: 0 8px 32px rgba(139,92,246,0.15) !important;
+            transition: all 0.3s ease !important;
+        }
+        .song-names-container:hover {
+            border-color: rgba(225,29,72,0.4) !important;
+            box-shadow: 0 12px 40px rgba(139,92,246,0.25) !important;
+        }
+        .week-section {
+            background: linear-gradient(135deg, rgba(139,92,246,0.1) 0%, rgba(225,29,72,0.1) 100%);
+            border: 1px solid rgba(139,92,246,0.2);
+            border-radius: 12px;
+            padding: 16px;
+            transition: all 0.3s ease;
+        }
+        .week-section:hover {
+            border-color: rgba(139,92,246,0.4);
+            box-shadow: 0 8px 25px rgba(139,92,246,0.2);
+        }
+        .week-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #F3F4F6;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #8B5CF6, #E11D48);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .songs-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
+        }
+        .songs-grid.week1-grid {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        @media (max-width: 768px) {
+            .songs-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .songs-grid.week1-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            .songs-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .song-tag {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .song-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .song-tag.tutorial { background: rgba(156,163,175,0.3); color: #D1D5DB; }
+        .song-tag.week1 { background: rgba(59,130,246,0.3); color: #93C5FD; }
+        .song-tag.week2 { background: rgba(249,115,22,0.3); color: #FDBA74; }
+        .song-tag.week3 { background: rgba(34,197,94,0.3); color: #86EFAC; }
+        .song-tag.week4 { background: rgba(236,72,153,0.3); color: #F9A8D4; }
+        .song-tag.week5 { background: rgba(14,165,233,0.3); color: #7DD3FC; }
+        .song-tag.week6 { background: rgba(168,85,247,0.3); color: #C4B5FD; }
+        .song-tag.week7 { background: rgba(239,68,68,0.3); color: #FCA5A5; }
+        .song-tag.week8 { background: rgba(245,101,101,0.3); color: #FEB2B2; }
+kbd {
+    display: inline-block;
+    padding: 3px 6px;
+    margin: 0 2px;
+    font-size: 0.85em;
+    font-weight: 600;
+    line-height: 1;
+    color: #1f2937;
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.5);
+    font-family: 'Courier New', monospace;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+.screenshot-img {
+    border: 2px solid rgba(139,92,246,0.3) !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(139,92,246,0.15) !important;
+}
+
+.screenshot-img:hover {
+    border-color: rgba(225,29,72,0.5) !important;
+    box-shadow: 0 8px 20px rgba(139,92,246,0.25) !important;
+    transform: translateY(-2px) !important;
+}
+
+.screenshot-item {
+    transition: all 0.3s ease !important;
+}
+
+.screenshot-item:hover {
+    transform: translateY(-4px) !important;
+}
+
+/* Share buttons fix */
+
+/* How to Play steps layout fix */
+.howto-step .step-header {
+    margin-bottom: 1rem !important;
+}
+
+.howto-step .step-image {
+    margin: 1rem 0 !important;
+}
+
+.howto-step .step-content {
+    margin-top: 1rem !important;
+}
+        @media (max-width:640px){
+            .pcgg { display:none!important;}
+        }
+        
+        .step-image img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        .screenshot-item {
+            position: relative;
+        }
+        .screenshot-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .character-img {
+            display: block;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+        .video-container {
+            width: 100%;
+            aspect-ratio: 16/9;
+            min-height: 200px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .video-container {
+                aspect-ratio: 16/9;
+                min-height: 180px;
+                margin: 0 auto;
+                width: 100%;
+                max-width: calc(100vw - 2rem);
+            }
+        
+            .music-section .card {
+                padding: 1rem !important;
+                overflow: hidden;
+            }
+            
+            .video-container .play-button {
+                width: 60px !important;
+                height: 60px !important;
+            }
+            
+            .video-container .play-button svg {
+                width: 24px !important;
+                height: 24px !important;
+            }
+            
+            .video-container p {
+                font-size: 14px !important;
+            }
+            
+            .video-container .text-lg {
+                font-size: 16px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .video-container {
+                aspect-ratio: 4/3;
+                min-height: 150px;
+            }
+        }
+        
+        .heading-font {
+            font-display: swap;
+        }
+        
+        body, h1, h2, h3, h4, h5, h6 {
+            font-display: swap;
+        }
+        
+        body {
+            visibility: hidden;
+        }
+        body.loaded {
+            visibility: visible;
+        }
+        
+        img[loading="lazy"] {
+            min-height: 1px;
+        }
+        
+        #game-frame-wrap {
+            contain: layout style paint;
+        }
+        
+        .resp-iframe {
+            contain: layout;
+        }
+        
+        .card {
+            contain: layout style;
+        }
+        
+        main {
+            contain: layout;
+        }
+        </style><script>
+        // 页面加载完成显示内容
+        function showPage() {
+            document.body.classList.add('loaded');
+        }
+        
+        if (document.readyState !== 'loading') {
+            showPage();
+        } else {
+            document.addEventListener('DOMContentLoaded', showPage);
+        }
+        </script><link rel="stylesheet" href="/template/default/css/comments.css"><link rel="dns-prefetch" href="https://cdn.fridaynightfunkin.app"><link rel="preconnect" href="https://cdn.fridaynightfunkin.app" crossorigin><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Friday Night Funkin'","url":"https://fridaynightfunkin.app/","inLanguage":"en"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"FNF Online","applicationCategory":"Game","operatingSystem":"Web Browser","genre":["Rhythm","Music","Arcade"],"image":"https://cdn.fridaynightfunkin.app/images/fridaynightfunkin.webp","screenshot":"https://cdn.fridaynightfunkin.app/images/screenshot.webp","url":"https://fridaynightfunkin.app/","publisher":{"@type":"Organization","name":"FNF Online"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","ratingCount":"639","bestRating":"5","worstRating":"1"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","category":"free"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to Play FNF Online Unblocked","inLanguage":"en","totalTime":"PT5M","tool":[{"@type":"HowToTool","name":"Mouse or Touch"}],"step":[{"@type":"HowToStep","position":1,"name":"Step 1: Click to Start FNF Game","text":"Click the game screen to launch Friday Night Funkin(FNF Online). You'll see the main menu with options for Story Mode, Free Play, and game settings.","image":"https://cdn.fridaynightfunkin.app/images/step1.webp"},{"@type":"HowToStep","position":2,"name":"Step 2: Choose Your FNF Online Mode","text":"<strong>Story Mode</strong>: Experience Boyfriend's music battle journey week by week. Each week introduces new opponents and challenges. <strong>Free Play</strong>: Select any unlocked song to practice. Perfect for improving your skills on difficult tracks!","image":"https://cdn.fridaynightfunkin.app/images/step2.webp"},{"@type":"HowToStep","position":3,"name":"Step 3: Match the Arrows & Keep the Beat!","text":"Watch arrows scroll from bottom to top. When they overlap the target arrows at the top, press the matching arrow key (<kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> or <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>). Hit notes accurately to fill your side of the health bar. Miss too many and the song ends!","image":"https://cdn.fridaynightfunkin.appimages/step3.webp"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"Can I play Friday Night Funkin online?","acceptedAnswer":{"@type":"Answer","text":"Yes! Play FNF Online free at fridaynightfunkin.app with no downloads. Works on computers, Chromebooks, and at school (unblocked)."}},{"@type":"Question","name":"Who made Friday Night Funkin?","acceptedAnswer":{"@type":"Answer","text":"Created by ninjamuffin99 (programming), PhantomArcade and EvilSk8er (art), and Kawaisprite (music)."}},{"@type":"Question","name":"Where can I listen to the FNF soundtrack?","acceptedAnswer":{"@type":"Answer","text":"KawaiSprite has a Bandcamp page where you can listen to the Friday Night Funkin soundtrack."}},{"@type":"Question","name":"Is FNF Online free?","acceptedAnswer":{"@type":"Answer","text":"Yes! FNF Online is completely free to play in your web browser without downloading."}},{"@type":"Question","name":"When did Friday Night Funkin come out?","acceptedAnswer":{"@type":"Answer","text":"Friday Night Funkin was first released on October 5, 2020 for Ludum Dare 47."}},{"@type":"Question","name":"Where to play FNF online?","acceptedAnswer":{"@type":"Answer","text":"Play FNF Unblocked Online free at fridaynightfunkin.app"}},{"@type":"Question","name":"Is FNF available on mobile?","acceptedAnswer":{"@type":"Answer","text":"Not officially yet, but it will be in the future. You can play the web version on mobile browsers."}},{"@type":"Question","name":"What is Friday Night Funkin vs Whitty?","acceptedAnswer":{"@type":"Answer","text":"Whitty is a popular FNF mod featuring a hot-headed rockstar character with intense songs and challenging patterns."}}]}</script><style>
+		@media (max-width: 768px) {
+		  #played-text {
+			display: none!important;
+		  }
+		}
+		</style></head><body class="min-h-screen antialiased"><header class="w-full border-b border-white border-opacity-10 site-header"><div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between"><a href="/" class="inline-flex items-center gap-4" aria-label="FNF Online"><picture><source type="image/webp" srcset="https://cdn.fridaynightfunkin.app/images/logo.webp"><img src="https://cdn.fridaynightfunkin.app/images/logo.webp" alt="FNF Online" width="294" height="187" class="rounded" loading="eager" fetchpriority="high" style="height:90px;width:auto;max-width:450px"></picture><span class="heading-font text-2xl sm:text-3xl lg:text-4xl leading-none gradient-text brand-title site-title">Friday Night Funkin'</span></a><div class="flex items-center gap-2"><div class="language-selector relative"><button class="lang-btn flex items-center gap-2 px-3 py-2 rounded-full transition-all duration-300" id="langToggle" aria-label="Select Language"><span class="lang-flag">🌍</span><span class="lang-text text-sm font-medium">English</span><svg class="lang-arrow w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="lang-dropdown absolute right-0 top-full mt-2 bg-white rounded-2xl shadow-xl border border-opacity-20 border-gray-300 overflow-hidden opacity-0 invisible transform translate-y-2 transition-all duration-300 z-50 min-w-[160px]" id="langDropdown"><div class="lang-option-wrapper"><a href="/" class="lang-option flex items-center gap-3 px-4 py-3 hover:bg-opacity-80 transition-all duration-200 active"><span class="lang-emoji">EN</span><span class="lang-name">English</span></a><a href="/es/" class="lang-option flex items-center gap-3 px-4 py-3 hover:bg-opacity-80 transition-all duration-200 "><span class="lang-emoji">ES</span><span class="lang-name">Español</span></a><a href="/br/" class="lang-option flex items-center gap-3 px-4 py-3 hover:bg-opacity-80 transition-all duration-200 "><span class="lang-emoji">BR</span><span class="lang-name">Português(BR)</span></a><a href="/fr/" class="lang-option flex items-center gap-3 px-4 py-3 hover:bg-opacity-80 transition-all duration-200 "><span class="lang-emoji">FR</span><span class="lang-name">Français</span></a><a href="/de/" class="lang-option flex items-center gap-3 px-4 py-3 hover:bg-opacity-80 transition-all duration-200 "><span class="lang-emoji">DE</span><span class="lang-name">Deutsch</span></a><a href="/zh/" class="lang-option flex items-center gap-3 px-4 py-3 hover:bg-opacity-80 transition-all duration-200 "><span class="lang-emoji">ZH</span><span class="lang-name">中文</span></a></div></div></div></div></div></header><main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 space-y-8"><section class="grid grid-cols-1 gap-4 items-start" id="play-fridaynightfunkin-online"><div><div id="game-card" class="card rounded-lg p-3 sm:p-4"><div class="resp-iframe" id="game-frame-wrap"><iframe id="game-frame" src="/play.html" title="Play fridaynightfunkin Online" loading="eager" fetchpriority="high" allowfullscreen></iframe></div><div id="game-controls" class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3"><div class="flex items-center gap-3 flex-wrap" id="game-controls-inner"><div id="title-line" class="flex items-baseline gap-3 flex-wrap"><h1 class="heading-font text-2xl sm:text-3xl"><a href="https://fridaynightfunkin.app/">FNF Online</a></h1></div><div class="flex items-center gap-1 ml-1" aria-label="rate this game"><button class="star" data-star="1" aria-label="rate 1"><svg class="w-5 h-5" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20l1.2-6.5L2.5 9l6.6-.9L12 2z" fill="none" stroke="currentColor" stroke-width="2"/></svg></button><button class="star" data-star="2" aria-label="rate 2"><svg class="w-5 h-5" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20l1.2-6.5L2.5 9l6.6-.9L12 2z" fill="none" stroke="currentColor" stroke-width="2"/></svg></button><button class="star" data-star="3" aria-label="rate 3"><svg class="w-5 h-5" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20l1.2-6.5L2.5 9l6.6-.9L12 2z" fill="none" stroke="currentColor" stroke-width="2"/></svg></button><button class="star" data-star="4" aria-label="rate 4"><svg class="w-5 h-5" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20l1.2-6.5L2.5 9l6.6-.9L12 2z" fill="none" stroke="currentColor" stroke-width="2"/></svg></button><button class="star" data-star="5" aria-label="rate 5"><svg class="w-5 h-5" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20l1.2-6.5L2.5 9l6.6-.9L12 2z" fill="none" stroke="currentColor" stroke-width="2"/></svg></button><span class="text-sm text-gray-300 ml-2 mr-1">639 voted,</span><span id="avg-rating" class="text-sm text-gray-300 ml-1">4.8/5.0</span></div><div class="flex items-baseline gap-2"><button id="bookmark-btn" class="text-sm text-purple-400 hover:text-pink-400 transition-colors duration-200 cursor-pointer whitespace-nowrap" title="Bookmark this page"> Press Ctrl+D to Bookmark </button><span class="text-sm text-gray-400 whitespace-nowrap" style="display: none;"> 1,088 plays </span></div></div><div id="controls-actions" class="flex items-center gap-2 sm:gap-3 flex-nowrap ml-auto self-end sm:self-auto justify-end w-full sm:w-auto"><a href="#discuss-fridaynightfunkin" class="btn inline-flex items-center gap-2 px-4 h-12 rounded-md soft-surface hover:bg-opacity-20 whitespace-nowrap" aria-label="Go to comments"><svg class="w-6 h-6" aria-hidden="true"><use href="#icon-message"></use></svg><span class="text-base text-gray-300">3</span></a><button id="expand-btn" class="btn inline-flex items-center gap-2 px-4 h-12 rounded-md soft-surface hover:bg-opacity-20 text-gray-100 whitespace-nowrap" aria-label="Expand game"><svg class="w-6 h-6" aria-hidden="true"><use href="#icon-rectangle"></use></svg></button><button id="fs-btn" class="btn inline-flex items-center gap-2 px-4 h-12 rounded-md soft-surface hover:bg-opacity-20 text-gray-100 whitespace-nowrap" aria-label="Fullscreen (game)"><svg class="w-6 h-6" aria-hidden="true"><use href="#icon-maximize"></use></svg></button></div><div class="mt-4 flex justify-center"></div></div></div></div></section><section class="space-y-6 about-section grid grid-cols-1 gap-4 items-start"><div><h2 id="what-is-fridaynightfunkin" class="heading-font text-2xl sm:text-3xl text-center">What's FNF Online?</h2><article class="card rounded-lg p-6 space-y-4"><picture><p class="text-lg text-gray-300 max-w-prose mx-auto text-left"><img alt="FNF online game" width="300" height="300" loading="lazy" class="rounded-md w-full max-w-[300px] h-auto mx-auto step-img" src="https://cdn.fridaynightfunkin.app/images/fridaynightfunkin.webp" srcset="https://cdn.fridaynightfunkin.app/images/fridaynightfunkin-300.webp 300w, https://cdn.fridaynightfunkin.app/images/fridaynightfunkin.webp 512w" sizes="(max-width: 768px) 300px, 300px"></p></picture><p class="text-lg" style="color:var(--text)"><a href="https://fridaynightfunkin.app/"><strong>FNF Online</strong></a> (also named Friday Night Funkin') is a online rhythm video game that combines 90s nostalgic visuals with rap music battles. At its heart, it's a rap duel simulator: you take the role of Boyfriend, a determined wannabe rapper, who faces off against opponents to prove he is worthy of dating Girlfriend, who's cheering you on from the speakers. </p><p class="text-lg text-gray-300"><strong>Gameplay Overview</strong>: To be a successful rapper in FNF Online, you need to follow screen prompts, perfect your timing and pattern recognition. Watch for when arrows scroll up and match the beat - hit them at the right moment to keep your rhythm.</p><p class="text-lg text-gray-300"><strong>FNF</strong> was originally released on October 5, 2020, created for the Ludum Dare 47 game jam hosted by Newgrounds. Originally offering a tutorial, 2 weeks and 6 songs, the rhythm game became a huge success and its content has been expanded with 8 weeks, 25+ songs and many characters.</p><p class="text-lg text-gray-300">Friday Night Funkin Game's open-source access allowed the creation of many mods developed by the community, enriching the Friday Night Funkin universe. Play FNF Online now - no download required!</p><p class="text-lg text-gray-300">Whether you have a minute or an hour, Friday Night Funkin' (FNF Online) is a lightweight way to sharpen your rhythm skills while having fun with funky music and colorful characters.</p></article></div></section><section class="space-y-6 compare-section grid grid-cols-1 gap-4 items-start"><div><h2 id="game-modes" class="heading-font text-2xl sm:text-3xl text-center mb-6">FNF Online Game Modes</h2><article class="card rounded-lg p-6 space-y-4"><ol class="list-decimal space-y-2 text-left px-6"><li><strong>Story Mode</strong>: Follow Boyfriend's journey through themed weeks of music battles. Each week features 3+ songs against unique opponents. You must clear all tracks in a row to win a week.</li><li><strong>Free Play</strong>: Practice individual songs at your own pace. Choose any track you've unlocked and select your difficulty level - perfect for mastering those tricky patterns!</li></ol><p class="text-gray-300">In short: <strong>FNF Online Story Mode</strong> provides narrative progression, while <strong>Free Play</strong> lets you practice and perfect your skills.</p></article></div></section><section class="space-y-6 howto-section grid grid-cols-1 gap-4 items-start"><div><h2 id="how-to-play-fridaynightfunkin" class="heading-font text-2xl sm:text-3xl text-center">How to Play FNF Online Unblocked</h2><div class="grid grid-cols-1 gap-6"><article class="howto-step card rounded-lg p-6 flex flex-col items-center gap-4 text-center"><div class="step-header inline-flex flex-col items-center justify-center gap-2 w-full"><span class="step-dot">1</span><h3 class="heading-font text-2xl">Step 1: Click to Start FNF Game</h3></div><picture class="step-image flex justify-center w-full"><img src="https://cdn.fridaynightfunkin.app/images/step1.webp" alt="Click to start FNF Game" width="400" height="300" loading="lazy" class="rounded-md w-full h-auto max-w-[400px]"></picture><div class="step-content"><p class="text-lg text-gray-300 max-w-prose mx-auto text-left">Click the game screen to launch Friday Night Funkin(FNF Online). You'll see the main menu with options for Story Mode, Free Play, and game settings.</p></div></article><article class="howto-step card rounded-lg p-6 flex flex-col items-center gap-4 text-center"><div class="step-header inline-flex flex-col items-center justify-center gap-2 w-full"><span class="step-dot">2</span><h3 class="heading-font text-2xl">Step 2: Choose Your FNF Online Mode</h3></div><picture class="step-image flex justify-center w-full"><img src="https://cdn.fridaynightfunkin.app/images/step2.webp" alt="Choose FNF Story Mode or Free Play" width="400" height="300" loading="lazy" class="rounded-md w-full h-auto max-w-[400px]"></picture><div class="step-content text-lg text-gray-300 max-w-prose space-y-2 mx-auto text-left"><p><strong>Story Mode</strong>: Experience Boyfriend's music battle journey week by week. Each week introduces new opponents and challenges.</p><p class="text-left text-lg"><strong>Free Play</strong>: Select any unlocked song to practice. Perfect for improving your skills on difficult tracks!</p><div class="space-y-4"><div class="space-y-2"><p class="font-semibold" style="color:var(--text)">Simple Controls & Gameplay</p><p><kbd class="px-2 py-1 rounded soft-surface border" style="border-color:var(--card-border)">Arrow Keys</kbd> Press ↑ ↓ ← → when arrows overlap with stationary markers at the top</p><p><kbd class="px-2 py-1 rounded soft-surface border" style="border-color:var(--card-border)">WASD Keys</kbd> Alternative controls: W(up), A(left), S(down), D(right)</p><p><kbd class="px-2 py-1 rounded soft-surface border" style="border-color:var(--card-border)">Timing is Key</kbd> Watch the arrows scroll up and hit the corresponding key exactly when they overlap</p><p><strong>Story Mode Tips</strong> – Complete all songs in a week consecutively. Manage your health bar carefully - missing too many notes ends the song!</p><p><strong>Free Play Mode</strong> – Practice songs at Easy, Normal, or Hard difficulty. No pressure - restart anytime!</p></div><div class="space-y-2"><p class="font-semibold" style="color:var(--text)">Health Bar Feedback</p><p>Watch the health bar at the bottom:</p><ul class="list-disc pl-6 space-y-1"><li>Green (your side) - You're doing great! Keep hitting those notes.</li><li>Yellow (middle) - Even match, stay focused!</li><li>Red (opponent's side) - Danger! You're missing too many notes.</li></ul></div><div class="space-y-2"><p class="font-semibold" style="color:var(--text)">Difficulty Levels</p><p>Choose your FNF Online challenge:</p><ul class="list-disc pl-6 space-y-1"><li>Easy - Slower arrows, fewer notes. Perfect for beginners.</li><li>Normal - Standard speed with moderate complexity.</li><li>Hard - Fast arrows, complex patterns. For rhythm masters!</li><li>Week Progression - Unlock new weeks by completing previous ones in Story Mode.</li><li>Score System - Hit notes perfectly for "Sick" ratings and higher scores.</li><li>Combo System - Chain successful hits without missing to build combos.</li><li>Opponent Turns - Watch and learn patterns when your opponent sings.</li><li>Survival - Keep your health above zero to complete songs.</li><li>Practice - Use Free Play to master difficult sections.</li></ul></div></div></div></article><article class="howto-step card rounded-lg p-6 flex flex-col items-center gap-4 text-center"><div class="step-header inline-flex flex-col items-center justify-center gap-2 w-full"><span class="step-dot">3</span><h3 class="heading-font text-2xl">Step 3: Match the Arrows & Keep the Beat!</h3></div><picture class="step-image flex justify-center w-full"><img src="https://cdn.fridaynightfunkin.app/images/step3.webp" alt="Match arrows to the beat" width="400" height="300" loading="lazy" class="rounded-md w-full h-auto max-w-[400px]"></picture><div class="step-content"><p class="text-lg text-gray-300 max-w-prose mx-auto text-left">Watch arrows scroll from bottom to top. When they overlap the target arrows at the top, press the matching arrow key (<kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> or <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>). Hit notes accurately to fill your side of the health bar. Miss too many and the song ends!</p><div class="mt-2 space-y-2 text-left"><p class="font-semibold" style="color:var(--text)">Strategies and Tips of FNF Online</p><ul class="list-disc pl-6 text-base text-gray-300 space-y-2 max-w-prose"><li><strong>Use Both Hands:</strong> Split controls between left and right hands (<kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> or <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>) to hit simultaneous notes more easily.</li><li><strong>Follow the FNF Online Rhythm:</strong> Let the music guide your timing. Each song in FNF Online has a strong beat - sync with it rather than just watching visuals.</li><li><strong>Learn Patterns:</strong> When mirroring opponent sequences, focus on the pattern rather than individual arrows.</li><li><strong>Practice FNF online in Free Play:</strong> Master difficult songs at lower difficulties before tackling them on Hard mode.</li><li><strong>Stay Calm:</strong> Don't panic when patterns get complex. Breathe and focus on one note at a time.</li></ul></div></div></article></div></div></section><section class="space-y-6 strategies-section grid grid-cols-1 gap-4 items-start"><div><h2 id="strategies-and-tips" class="heading-font text-2xl sm:text-3xl text-center mb-6">Strategies and Tips of FNF Online</h2><article class="card rounded-lg p-6 space-y-6"><div class="space-y-4"><div class="flex items-start gap-4"><div class="icon-wrap flex-shrink-0">🎮</div><div><h3 class="heading-font text-lg mb-2">Use Both Hands Effectively</h3><p class="text-base text-gray-300">Split the controls between your left and right hands to hit simultaneous notes. Think of it like dancing - you wouldn't try to win a competition using only one foot!</p></div></div><div class="flex items-start gap-4"><div class="icon-wrap flex-shrink-0">🎯</div><div><h3 class="heading-font text-lg mb-2">Focus on Patterns</h3><p class="text-base text-gray-300">Follow the patterns and focus less on individual arrows. When you need to mirror an opponent's sequence, pattern recognition will be your best friend.</p></div></div><div class="flex items-start gap-4"><div class="icon-wrap flex-shrink-0">🎵</div><div><h3 class="heading-font text-lg mb-2">Follow the Rhythm</h3><p class="text-base text-gray-300">Every song has a strong beat or melody. Let the rhythm guide your timing instead of relying only on visual cues - your ears are just as important as your eyes!</p></div></div><div class="flex items-start gap-4"><div class="icon-wrap flex-shrink-0">⚡</div><div><h3 class="heading-font text-lg mb-2">Practice FNF online in Free Play</h3><p class="text-base text-gray-300">This is a lifesaver for mastering difficult songs. Start with lower difficulties to build muscle memory, then gradually work your way up to harder levels.</p></div></div></div></article></div></section><section class="space-y-6 music-section grid grid-cols-1 gap-4 items-start"><div><h2 id="friday-night-funkin-music" class="heading-font text-2xl sm:text-3xl text-center mb-6">Friday Night Funkin' Music & Song Names</h2><article class="card rounded-lg p-6 space-y-4"><div class="flex items-center gap-4 mb-4"><div class="icon-wrap">🎼</div><div><h3 class="heading-font text-xl">Composed by Kawai Sprite</h3><span class="badge">Original Soundtrack</span></div></div><p class="text-lg text-gray-300">Friday Night Funkin's incredible soundtrack will have you moving and grooving in your chair from the very first beat. Each week brings a completely distinct musical style - from funky hip-hop and spooky organ synths to electro-pop club beats and militaristic chiptune rock. It's truly a crash course in funk!</p><p class="text-base text-gray-300">You might already be familiar with some of the viral tracks like <strong>"M.I.L.F"</strong> and <strong>"Ugh"</strong> that became internet sensations and spawned countless memes and remixes.</p><div class="mt-6"><h3 class="heading-font text-xl mb-4">Song Names in FNF Online(Friday Night Funkin)</h3><div class="song-names-container rounded-lg p-6 mb-6"><p class="text-base text-gray-300 mb-6">Friday Night Funkin' features an incredible collection of catchy tracks organized by weeks. Each week brings unique challenges and memorable opponents:</p><div class="space-y-6"><div class="week-section"><h4 class="week-title">🎵 Week 1 – Daddy Dearest</h4><div class="songs-grid week1-grid"><span class="song-tag tutorial">Tutorial</span><span class="song-tag week1">Bopeebo</span><span class="song-tag week1">Fresh</span><span class="song-tag week1">DadBattle</span></div></div><div class="week-section"><h4 class="week-title">🎃 Week 2 – Spooky Month (Skid & Pump)</h4><div class="songs-grid"><span class="song-tag week2">Spookeez</span><span class="song-tag week2">South</span><span class="song-tag week2">Monster</span></div></div><div class="week-section"><h4 class="week-title">🔫 Week 3 – Pico</h4><div class="songs-grid"><span class="song-tag week3">Pico</span><span class="song-tag week3">Philly Nice</span><span class="song-tag week3">Blammed</span></div></div><div class="week-section"><h4 class="week-title">💃 Week 4 – Mommy Mearest</h4><div class="songs-grid"><span class="song-tag week4">Satin Panties</span><span class="song-tag week4">High</span><span class="song-tag week4">M.I.L.F</span></div></div><div class="week-section"><h4 class="week-title">🎄 Week 5 – Christmas (Parents)</h4><div class="songs-grid"><span class="song-tag week5">Cocoa</span><span class="song-tag week5">Eggnog</span><span class="song-tag week5">Winter Horrorland</span></div></div><div class="week-section"><h4 class="week-title">💘 Week 6 – Senpai (Dating Sim style)</h4><div class="songs-grid"><span class="song-tag week6">Senpai</span><span class="song-tag week6">Roses</span><span class="song-tag week6">Thorns</span></div></div><div class="week-section"><h4 class="week-title">💥 Week 7 – Tankman</h4><div class="songs-grid"><span class="song-tag week7">Ugh</span><span class="song-tag week7">Guns</span><span class="song-tag week7">Stress</span></div></div><div class="week-section"><h4 class="week-title">🔥 Week 8 – The Darnell Update</h4><div class="songs-grid"><span class="song-tag week8">Darnell</span><span class="song-tag week8">Lit Up</span><span class="song-tag week8">2hot</span></div></div></div><p class="text-sm text-gray-400 mt-6">Each week presents escalating difficulty and unique musical styles, from funky beats to spooky rhythms and intense rap battles!</p></div><h4 class="heading-font text-lg mb-4">Gameplay Video</h4><div class="video-container relative bg-gray-900 rounded-lg overflow-hidden"><div id="video-placeholder" class="absolute inset-0 flex flex-col items-center justify-center cursor-pointer bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-sm"><div class="play-button w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mb-4 hover:bg-red-700 transition-colors"><svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><p class="text-white text-lg font-semibold">Friday Night Funkin' Gameplay</p><p class="text-gray-300 text-sm">Click to load FNF unblocked video</p></div><iframe id="gameplay-video" class="w-full h-full hidden" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div></article></div></section><section class="space-y-6 development-section grid grid-cols-1 gap-4 items-start"><div><h2 id="ongoing-development" class="heading-font text-2xl sm:text-3xl text-center mb-6">Ongoing Development about FNF</h2><article class="card rounded-lg p-6 space-y-4"><div class="flex items-center gap-4 mb-4"><div class="icon-wrap">🔧</div><div><h3 class="heading-font text-xl">Open Source Community</h3><span class="badge">Active Development</span></div></div><p class="text-lg text-gray-300">Friday Night Funkin' is an open-source game with an incredibly active development community. The game features countless fan-made mods that expand the gameplay with new characters, songs, and storylines.</p><p class="text-base text-gray-300">In addition to the amazing mods created by passionate fans, the original developers recently added <strong>Week 7</strong> to the game and have exciting plans to turn FNF into a 'full-ass game' in the future!</p><div class="mt-6 p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30 rounded-lg border border-purple-500/30"><h4 class="heading-font text-lg mb-2">Support the Developers</h4><p class="text-base text-gray-300 mb-3">Want to support ninjamuffin99 and the development team?</p><a href="https://ninja-muffin24.itch.io/funkin/purchase" target="_blank" rel="noopener noreferrer nofollow" class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all font-semibold"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Download from itch.io </a></div></article></div></section><section class="space-y-6 screenshot-section grid grid-cols-1 gap-4 items-start"><div><h2 id="screenshot-of-fridaynightfunkin" class="heading-font text-2xl sm:text-3xl text-center mb-2">Screenshots of FNF Online</h2><p class="text-center text-base text-gray-400 mb-6">Exciting moments from Friday Night Funkin gameplay</p><div class="grid grid-cols-2 lg:grid-cols-3 gap-4"><div class="screenshot-item"><img src="https://cdn.fridaynightfunkin.app/images/screenshot1.webp" alt="FNF Battle with Pico" width="400" height="225" class="screenshot-img rounded-lg w-full h-auto" loading="lazy"><p class="text-center text-sm text-gray-300 mt-2">Intense rap battle against Pico</p></div><div class="screenshot-item"><img src="https://cdn.fridaynightfunkin.app/images/screenshot2.webp" alt="FNF with Girlfriend cheering" width="400" height="225" class="screenshot-img rounded-lg w-full h-auto" loading="lazy"><p class="text-center text-sm text-gray-300 mt-2">Girlfriend cheers from the speakers</p></div><div class="screenshot-item"><img src="https://cdn.fridaynightfunkin.app/images/screenshot3.webp" alt="FNF vs Daddy Dearest" width="400" height="225" class="screenshot-img rounded-lg w-full h-auto" loading="lazy"><p class="text-center text-sm text-gray-300 mt-2">Face off against Daddy Dearest</p></div><div class="screenshot-item"><img src="https://cdn.fridaynightfunkin.app/images/screenshot4.webp" alt="FNF Week 6 Pixel Style" width="400" height="225" class="screenshot-img rounded-lg w-full h-auto" loading="lazy"><p class="text-center text-sm text-gray-300 mt-2">Week 6 features retro pixel art</p></div><div class="screenshot-item"><img src="https://cdn.fridaynightfunkin.app/images/screenshot5.webp" alt="FNF vs Tankman Week 7" width="400" height="225" class="screenshot-img rounded-lg w-full h-auto" loading="lazy"><p class="text-center text-sm text-gray-300 mt-2">Battle Tankman in Week 7</p></div><div class="screenshot-item"><img src="https://cdn.fridaynightfunkin.app/images/screenshot6.webp" alt="FNF Gameplay Screenshot" width="400" height="225" class="screenshot-img rounded-lg w-full h-auto" loading="lazy"><p class="text-center text-sm text-gray-300 mt-2">Retry FNF Online</p></div></div></div></section><section class="space-y-6 characters-section grid grid-cols-1 gap-4 items-start"><div><h2 id="top-6-iconic-characters" class="heading-font text-2xl sm:text-3xl text-center">Top 6 Iconic FNF Online Characters</h2><p class="text-center text-lg text-gray-300 mb-8">Meet the standout personalities of Friday Night Funkin'</p><div class="grid grid-cols-2 gap-6"><article class="character-card card rounded-lg p-6 flex flex-col gap-4"><div class="flex items-center gap-4"><img src="https://cdn.fridaynightfunkin.app/images/boyfriend.webp" alt="Boyfriend" width="80" height="80" class="character-img rounded-lg w-20 h-20 object-cover" loading="lazy"><div><h3 class="heading-font text-xl">Boyfriend</h3><span class="badge">Main Character</span></div></div><p class="text-base text-gray-300">Boyfriend is the confident lead of Friday Night Funkin'(FNF Game), known for his blue hair, red cap, and fearless rhythm battles. He's constantly challenged by opponents while trying to prove his musical skills and win Girlfriend's heart. With quick reflexes and determination, he's ready for every beat thrown his way.</p></article><article class="character-card card rounded-lg p-6 flex flex-col gap-4"><div class="flex items-center gap-4"><img src="https://cdn.fridaynightfunkin.app/images/girlfriend.webp" alt="Girlfriend" width="80" height="80" class="character-img rounded-lg w-20 h-20 object-cover" loading="lazy"><div><h3 class="heading-font text-xl">Girlfriend</h3><span class="badge">Support</span></div></div><p class="text-base text-gray-300">Girlfriend is Boyfriend's supportive partner, usually seen sitting on speakers, nodding to the music. She's the daughter of powerful figures in the FNF game, making Boyfriend's battles even more intense. Calm and cheerful, she adds charm to each encounter while cheering on every performance with unwavering focus.</p></article><article class="character-card card rounded-lg p-6 flex flex-col gap-4"><div class="flex items-center gap-4"><img src="https://cdn.fridaynightfunkin.app/images/daddy-dearest.webp" alt="Daddy Dearest" width="80" height="80" class="character-img rounded-lg w-20 h-20 object-cover" loading="lazy"><div><h3 class="heading-font text-xl">Daddy Dearest</h3><span class="badge">Week 1</span></div></div><p class="text-base text-gray-300">Daddy Dearest is Girlfriend's father and a former rockstar who challenges Boyfriend through fierce rap battles. Known for his sharp suit and glowing red eyes, he's not easy to impress. He brings intensity and style to every confrontation, testing whether Boyfriend is truly worthy of his daughter.</p></article><article class="character-card card rounded-lg p-6 flex flex-col gap-4"><div class="flex items-center gap-4"><img src="https://cdn.fridaynightfunkin.app/images/pico.webp" alt="Pico" width="80" height="80" class="character-img rounded-lg w-20 h-20 object-cover" loading="lazy"><div><h3 class="heading-font text-xl">Pico</h3><span class="badge">Week 3</span></div></div><p class="text-base text-gray-300">Pico is a skilled fighter and rapper, recognized for his orange hair and serious demeanor. Originally from Pico's School, he appears as a rival in FNF Game (Friday Night Funkin'). His tracks demand precision, and his presence commands attention. Armed and intense, Pico brings a gritty tone to the rhythm battles.</p></article><article class="character-card card rounded-lg p-6 flex flex-col gap-4"><div class="flex items-center gap-4"><img src="https://cdn.fridaynightfunkin.app/images/senpai.webp" alt="Senpai" width="80" height="80" class="character-img rounded-lg w-20 h-20 object-cover" loading="lazy"><div><h3 class="heading-font text-xl">Senpai</h3><span class="badge">Week 6</span></div></div><p class="text-base text-gray-300">Senpai appears in Week 6's retro-style stage as a charming school heartthrob. Behind his pixelated look lies something far more sinister. At first glance, he seems polite and sweet, but his words can turn sharp quickly. His songs blend classic style with tension, making every match both nostalgic and unsettling.</p></article><article class="character-card card rounded-lg p-6 flex flex-col gap-4"><div class="flex items-center gap-4"><img src="https://cdn.fridaynightfunkin.app/images/tankman.webp" alt="Tankman" width="80" height="80" class="character-img rounded-lg w-20 h-20 object-cover" loading="lazy"><div><h3 class="heading-font text-xl">Tankman</h3><span class="badge">Week 7</span></div></div><p class="text-base text-gray-300">Tankman, with his iconic black helmet and no-nonsense attitude, comes from the Newgrounds universe. He's blunt, sarcastic, and unafraid to push Boyfriend to the limit. His cutscenes and songs often mix harsh words with heavy beats - a commanding opponent bringing raw edge to the final week of the base game.</p></article></div></div></section><section class="space-y-6 features-section grid grid-cols-1 gap-4 items-start"><div><h2 id="key-features-of-fridaynightfunkin" class="heading-font text-2xl sm:text-3xl text-center">Features of FNF Online</h2><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4"><article class="feature-card card rounded-lg p-5 flex flex-col gap-3"><div class="flex items-center justify-between"><div class="icon-wrap">🎯</div><span class="badge px-2">1</span></div><h3 class="heading-font text-lg">Nostalgic 90s B-Boy Visuals</h3><p class="text-base text-gray-300">Cool retro-style graphics with vibrant colors and smooth animations that capture the funky spirit of rhythm games.</p></article><article class="feature-card card rounded-lg p-5 flex flex-col gap-3"><div class="flex items-center justify-between"><div class="icon-wrap">📅</div><span class="badge px-2">2</span></div><h3 class="heading-font text-lg">Original Soundtrack</h3><p class="text-base text-gray-300">Music by Kawai Sprite featuring nu-jazz, Vocaloid dance beats, and funky hip-hop across 25+ tracks.</p></article><article class="feature-card card rounded-lg p-5 flex flex-col gap-3"><div class="flex items-center justify-between"><div class="icon-wrap">👆</div><span class="badge px-2">3</span></div><h3 class="heading-font text-lg">Simple & Intuitive Controls</h3><p class="text-base text-gray-300">Just four arrow keys (<kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>) or <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> - easy to learn, challenging to master. No complicated button combinations needed!</p></article><article class="feature-card card rounded-lg p-5 flex flex-col gap-3"><div class="flex items-center justify-between"><div class="icon-wrap">🌐</div><span class="badge px-2">4</span></div><h3 class="heading-font text-lg">Free Browser Gameplay</h3><p class="text-base text-gray-300">Play Friday Night Funkin Online free with no downloads or sign-ups. Works in any modern web browser!</p></article></div></div></section><section class="space-y-6 faq-section grid grid-cols-1 gap-4 items-start"><div><h2 id="faq-what-is-fridaynightfunkin" class="heading-font text-2xl sm:text-3xl text-center">FAQs about FNF Online</h2><div class="grid grid-cols-1 gap-4"><details class="card rounded-md p-5"><summary class="cursor-pointer"><h3 class="font-semibold text-lg">What is Friday Night Funkin vs Whitty?</h3></summary><p class="mt-2 text-base text-gray-300"><strong>Whitty</strong> is one of the most popular mods for Friday Night Funkin', starring Whitmore, a hot-headed rockstar character who has beef with your girlfriend's parents. The mod features intense songs and challenging patterns.</p></details><details class="card rounded-md p-5"><summary class="cursor-pointer"><h3 class="font-semibold text-lg">Where can I listen to the Friday Night Funkin' soundtrack?</h3></summary><p class="mt-2 text-base text-gray-300">KawaiSprite has a <a href="https://kawaisprite.bandcamp.com/" target="_blank" rel="nofollow">Bandcamp page</a> where you can listen to and purchase the Friday Night Funkin' soundtrack online.</p></details><details class="card rounded-md p-5"><summary class="cursor-pointer"><h3 class="font-semibold text-lg">Where to play FNF Online?</h3></summary><p class="mt-2 text-base text-gray-300">You can play Friday Night Funkin (FNF Online) for free at <a href="https://fridaynightfunkin.app/">fridaynightfunkin.app</a> - no download required!</p></details><details class="card rounded-md p-5"><summary class="cursor-pointer"><h3 class="font-semibold text-lg">Is Friday Night Funkin available on mobile devices?</h3></summary><p class="mt-2 text-base text-gray-300">FNF Online is not officially available on mobile devices yet, but it will be in the future since the Kickstarter was funded! For now, you can play the web version on mobile browsers, though the experience is optimized for desktop.</p></details><details class="card rounded-md p-5"><summary class="cursor-pointer"><h3 class="font-semibold text-lg">Can I play Friday Night Funkin online?</h3></summary><p class="mt-2 text-base text-gray-300">Yes! You can play Friday Night Funkin Online and its most popular mods for free on this website. Play FNF Unblocked on your computer at home, on Chromebook, or at school. Practice your rhythm skills anywhere!</p></details><details class="card rounded-md p-5"><summary class="cursor-pointer"><h3 class="font-semibold text-lg">Who made Friday Night Funkin'?</h3></summary><p class="mt-2 text-base text-gray-300"><strong>Friday Night Funkin'</strong> was created by: <br>• Programming: <a href="https://twitter.com/ninja_muffin99" target="_blank" rel="nofollow">ninjamuffin99</a><br>• Art: <a href="https://twitter.com/phantomarcade3k" target="_blank" rel="nofollow">PhantomArcade</a> & <a href="https://twitter.com/evilsk8r" target="_blank" rel="nofollow">EvilSk8er</a><br>• Music & Sound: <a href="https://twitter.com/kawaisprite" target="_blank" rel="nofollow">Kawaisprite</a></p></details><details class="card rounded-md p-5"><summary class="cursor-pointer"><h3 class="font-semibold text-lg">Is Friday Night Funkin' free?</h3></summary><p class="mt-2 text-base text-gray-300">Yes! FNF is completely free to play in your web browser without downloading anything. The FNF online game is also open-source on <a href="https://github.com/FunkinCrew/Funkin" target="_blank" rel="nofollow">GitHub</a> under the Apache 2.0 license.</p></details><details class="card rounded-md p-5"><summary class="cursor-pointer"><h3 class="font-semibold text-lg">When did Friday Night Funkin' come out?</h3></summary><p class="mt-2 text-base text-gray-300">Friday Night Funkin' was first released as a prototype on <strong>October 5, 2020</strong> for the Ludum Dare 47 game jam.</p></details></div></div></section><section class="space-y-6 comments-section grid grid-cols-1 gap-4 items-start"><div><h2 id="discuss-fridaynightfunkin" class="heading-font text-2xl sm:text-3xl text-center mb-6">Discuss FNF Online</h2><script defer type="text/javascript">
+						const tool_id = "1";
+							const tool_image = "https://fridaynightfunkin.app/images/logo.webp";
+						const tool_title = "FNF Online";
+						const tool_name = "FNF Online";
+						const tool_url = "https://fridaynightfunkin.app/";
+							window.wwwdomain = '';
+							window.iflogin = 0;
+							const _LANG={};
+						_LANG.try_again_later='Try again later';
+						_LANG.removed_from_fav='Removed from favorites';
+						_LANG.added_from_fav='Added to favorites';
+						_LANG.continue_by_sign='Continue by signing in';
+						_LANG.submitting='Submitting';
+						_LANG.thankyou='Thank you';
+						_LANG.post='Post';
+						_LANG.exitfullscreen='Exit fullscreen';
+						_LANG.confirm='Confirm';
+						_LANG.cancel='Cancel';
+						_LANG.copied='Copied';
+						_LANG.yourname='Your name';
+						_LANG.yourcomment='Your comment';
+						_LANG.submitted='Submitted';
+						_LANG.voted_today='Voted today';
+						_LANG.under_review='Under review';
+						_LANG.just_now='Just now';
+						_LANG.reply='Reply';
+						_LANG.leaveacomment='Leave a comment';
+						_LANG.at_least_3='At least 3 characters';
+						_LANG.at_least_10='At least 10 characters';
+						</script><div class="comments rounded-lg p-6" id="comments"><form class="comments__form comments__main-form" id="commentForm"><input type="hidden" name="typeid" value="1" id="typeid"><input type="hidden" name="parentid" value="0" id="parentid"><input type="hidden" name="source_title" value="FNF Online" type="hidden" id="source_title"><input type="hidden" name="source_uri" value="https://fridaynightfunkin.app/" type="hidden" id="source_uri"><input type="hidden" name="type" value="tool" id="type"><div class="comments__form-group"><input value="" placeholder="Your name" type="text" id="comment_name" name="comment_name" class="comments__form-input" required></div><div class="comments__form-group"><textarea placeholder="Your comment" id="comment_message" name="comment_message" class="comments__form-input comments__form-textarea" required></textarea><div class="g-recaptcha" data-sitekey="6LeafKwrAAAAAJLHvuf-PS9kPhfYN2-40qoOJaVj"></div></div><button type="submit" class="comments__form_submit">Leave a comment</button></form><div id="comments-container" class="comments__list"></div><div class="comments__pagination-show"></div></div><script src="/template/default/js/comments_ajax.js"></script><script defer>
+					new IntersectionObserver(([e], o) => e.isIntersecting && (
+					  o.unobserve(e.target),
+					  new CommentSystem({
+						container: '#comments-container',
+						pagination: '.comments__pagination-show',
+						typeid: 1,
+						source_title: 'FNF Online',		
+						source_uri: 'https://fridaynightfunkin.app/',
+						type: 'tool',
+						loginNeeded: 0,
+						currentPage: 1
+					  })
+					), { rootMargin: '1px' }).observe(document.querySelector('#comments-container'));
+					</script><script defer type="text/javascript" src="/template/default/js/comments.js"></script><script defer type="text/javascript" src="/template/default/js/submitRating.js"></script><script defer type="text/javascript" src="/template/default/js/homepage.js"></script></div></section></main><footer class="mt-8 border-t footer-border"><div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 grid gap-3 sm:flex sm:items-center sm:justify-between"><p class="text-sm text-gray-400">© <span id="year"></span> FridayNightFunkin.app All rights reserved.</p><nav class="flex flex-wrap items-center gap-4 text-sm"><a href="mailto:hello@fridaynightfunkin.app" rel="nofollow no-referrer">Contact Us</a><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms-of-use.html">Terms of Use</a></nav></div></footer><button id="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 5l-7 7h4v7h6v-7h4z"/></svg></button><script>
+(function(){var btn=document.getElementById('back-to-top');if(!btn)return;function onScroll(){var vh=(window.innerHeight||800)/2;btn.style.display=window.scrollY>vh?'flex':'none'}window.addEventListener('scroll',onScroll,{passive:true});btn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});onScroll()})();function showToast(message,isSuccess=true,confirm){if(confirm){return showConfirm(message,confirm)}const toast=document.createElement("div");toast.className=`toast ${isSuccess?"toast-success":"toast-error"}`;toast.innerHTML=`<span class="toast-message">${message}</span>`;const fullscreenElement=document.fullscreenElement||document.webkitFullscreenElement||document.msFullscreenElement;if(fullscreenElement){fullscreenElement.appendChild(toast)}else{document.body.appendChild(toast)}setTimeout(()=>toast.classList.add("show"),10);setTimeout(()=>{toast.classList.remove("show");setTimeout(()=>toast.remove(),300)},3000)}function showConfirm(message,options={}){if(typeof options==="function"){options={onOk:options}}const{title=_LANG.confirm?_LANG.confirm:"Confirm",okText=_LANG.confirm?_LANG.confirm:"Confirm",cancelText=_LANG.cancel?_LANG.cancel:"Cancel",onOk,onCancel,}=options;const dialog=document.createElement("div");dialog.className="toast-dialog";dialog.innerHTML=`<div class="toast-dialog-backdrop"></div><div class="toast-dialog-content"><div class="toast-dialog-header"><span class="toast-dialog-title">${title}</span><span class="toast-dialog-icon">❓</span></div><div class="toast-dialog-body">${message}</div><div class="toast-dialog-footer"><button class="toast-dialog-btn toast-dialog-cancel">${cancelText}</button><button class="toast-dialog-btn toast-dialog-ok">${okText}</button></div></div>`;document.body.appendChild(dialog);setTimeout(()=>dialog.classList.add("show"),10);return new Promise((resolve)=>{const okBtn=dialog.querySelector(".toast-dialog-ok");const cancelBtn=dialog.querySelector(".toast-dialog-cancel");const closeDialog=(result)=>{dialog.classList.remove("show");setTimeout(()=>{dialog.remove();resolve(result);if(result&&typeof onOk==="function"){onOk()}if(!result&&typeof onCancel==="function"){onCancel()}},200)};okBtn.addEventListener("click",()=>closeDialog(true));cancelBtn.addEventListener("click",()=>closeDialog(false));dialog.querySelector(".toast-dialog-backdrop").addEventListener("click",()=>closeDialog(false))})}var toastStyleEl=document.getElementById('toast-style-el')||document.createElement('style');toastStyleEl.id='toast-style-el';toastStyleEl.textContent=`.toast-dialog{position:fixed;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;z-index:2147483647;opacity:0;pointer-events:none;transition:opacity 0.2s ease}.toast-dialog.show{opacity:1;pointer-events:auto}.toast-dialog-backdrop{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);backdrop-filter:var(--backdrop-blur)}.toast-dialog-content{position:relative;background:var(--search-bg);border-radius:12px;width:90%;max-width:400px;overflow:hidden;box-shadow:var(--shadow-hover);transform:translateY(20px);transition:transform 0.3s cubic-bezier(0.175,0.885,0.32,1.275);border:1px solid var(--border-foot-color)}.toast-dialog.show.toast-dialog-content{transform:translateY(0)}.toast-dialog-header{display:flex;justify-content:space-between;align-items:center;padding:16px 20px}.toast-dialog-title{font-size:18px;font-weight:600;color:var(--text-color)}.toast-dialog-icon{font-size:20px;color:var(--primary-color)}.toast-dialog-body{padding:15px 20px 35px 20px;font-size:18px;line-height:1.5;color:var(--text-color);text-align:center}.toast-dialog-footer{display:flex;border-top:1px solid var(--border-foot-color)}.toast-dialog-btn{flex:1;padding:14px;border:none;background:none;font-size:16px;cursor:pointer;transition:all 0.2s;color:var(--text-color)}.toast-dialog-cancel{border-right:1px solid var(--border-foot-color)}.toast-dialog-cancel:hover{background-color:var(--url-hover-bg)}.toast-dialog-ok{font-weight:500;color:var(--primary-color)}.toast-dialog-ok:hover{background-color:rgba(7,193,96,0.1)}@media(max-width:480px){.toast-dialog-content{width:calc(100%-40px);margin:20px}.toast-dialog-body{padding:20px 16px}.toast-dialog-btn{padding:12px}}`;if(!toastStyleEl.parentNode){document.head.appendChild(toastStyleEl)}
+</script><script>
+// Load ShareThis only on desktop to reduce mobile payload
+(function(){
+	var isMobileUA = /Mobi|Android|iPhone|iPad|iPod|Phone/i.test(navigator.userAgent);
+	var isNarrow = (window.matchMedia && window.matchMedia('(max-width: 768px)').matches);
+	if (isMobileUA || isNarrow) { return; }
+	var s = document.createElement('script');
+	s.src = 'https://platform-api.sharethis.com/js/sharethis.js#property=67f8ec9c069b9100198cfd09&product=sticky-share-buttons&source=platform';
+	s.async = true; s.defer = true;
+	document.head.appendChild(s);
+})();
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-24VCSXSHG7"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-24VCSXSHG7');
+</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1271829671637482"
+     crossorigin="anonymous"></script><div id="html-toc" class="html-toc"><div id="html-toc-backdrop" class="html-toc-backdrop"></div><nav id="html-toc-pop" class="html-toc-pop" aria-label="Table of Contents"><div class="toc-header">Table of Contents</div><ul class="toc-list"><li class="toc-item"><span class="toc-dot"></span><a class="toc-link" href="#play-fridaynightfunkin-online">Play FNF Online Now</a></li><li class="toc-item"><span class="toc-dot"></span><a class="toc-link" href="#what-is-fridaynightfunkin">What is Friday Night Funkin?</a></li><li class="toc-item"><span class="toc-dot"></span><a class="toc-link" href="#how-to-play-fridaynightfunkin">How to Play FNF Online</a></li><li class="toc-item"><span class="toc-dot"></span><a class="toc-link" href="#strategies-and-tips">Strategies & Tips</a></li><li class="toc-item"><span class="toc-dot"></span><a class="toc-link" href="#friday-night-funkin-music">FNF Music</a></li><li class="toc-item"><span class="toc-dot"></span><a class="toc-link" href="#ongoing-development">FNF Online Development</a></li><li class="toc-item"><span class="toc-dot"></span><a class="toc-link" href="#game-modes">FNF Game Modes & Features</a></li><li class="toc-item"><span class="toc-dot"></span><a class="toc-link" href="#screenshot-of-fridaynightfunkin">Screenshots of FNF Online</a></li><li class="toc-item"><span class="toc-dot"></span><a class="toc-link" href="#top-6-iconic-characters">Iconic Characters of FNF</a></li><li class="toc-item"><span class="toc-dot"></span><a class="toc-link" href="#key-features-of-fridaynightfunkin">Key Features of FNF</a></li><li class="toc-item"><span class="toc-dot"></span><a class="toc-link" href="#faq-what-is-fridaynightfunkin">FAQs about FNF</a></li><li class="toc-item"><span class="toc-dot"></span><a class="toc-link" href="#discuss-fridaynightfunkin">Discuss FNF Online</a></li></ul></nav></div><button id="toc-toggle" aria-label="Table of contents" class="toc-toggle"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="5" cy="6" r="1.5" /><circle cx="5" cy="12" r="1.5" /><circle cx="5" cy="18" r="1.5" /><rect x="9" y="5" width="10" height="2" rx="1" /><rect x="9" y="11" width="10" height="2" rx="1" /><rect x="9" y="17" width="10" height="2" rx="1" /></svg></button><svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden"><symbol id="icon-message" viewBox="0 0 24 24"><path fill="currentColor" d="M21 6a3 3 0 0 0-3-3H6A3 3 0 0 0 3 6v9a3 3 0 0 0 3 3h8l4 3v-3h0a3 3 0 0 0 3-3V6Z"/></symbol><symbol id="icon-maximize" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h7v2H6v5H4V4Zm10 0h6v6h-2V6h-4V4ZM4 14h2v4h4v2H4v-6Zm14 0h2v6h-6v-2h4v-4Z"/></symbol><symbol id="icon-star" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 2l2.9 6 6.6 .9-4.8 4.6 1.2 6.5L12 17.8 6.1 20l1.2-6.5L2.5 9l6.6-.9L12 2z"/></symbol><symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="4.2" y1="4.2" x2="6.3" y2="6.3"/><line x1="17.7" y1="17.7" x2="19.8" y2="19.8"/><line x1="4.2" y1="19.8" x2="6.3" y2="17.7"/><line x1="17.7" y1="6.3" x2="19.8" y2="4.2"/></g></symbol><linearGradient id="starGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ef4444"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient><symbol id="icon-reddit" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="13" r="1.2" fill="currentColor"/><circle cx="15" cy="13" r="1.2" fill="currentColor"/><path d="M8.5 15.5c1 .8 2.2 1.2 3.5 1.2s2.5-.4 3.5-1.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14.5 6.5l2 .5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="18" cy="7" r="1.2" fill="currentColor"/></symbol><symbol id="icon-cloud-off" viewBox="0 0 24 24"><path fill="currentColor" d="M3 3l18 18-1.4 1.4-2.3-2.3H7a4 4 0 0 1-4-4c0-2 1.5-3.6 3.4-3.9a6 6 0 0 1 7.6-4.6c2 .6 3.6 2.3 4 4.3h.1A4 4 0 0 1 21 12c0 1-.4 1.9-1 2.6l-1.5-1.5c.3-.3 .5-.7 .5-1.1 0-1.1-.9-2-2-2h-1v-.5a4 4 0 0 0-7.9-.8l-1.7-1.7L3 3z"/></symbol><symbol id="icon-badge-free" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.5 2.5L17 2l2 2 2.5-2.5L22 6l2 2-2.5 2.5L24 13l-4 .5L19.5 16 17 14l-2.5 2L14 13.5 10 13l.5-2.5L8 8l2-2-1-4 3 1L12 2z" opacity=".25"/><text x="12" y="14" font-size="8" text-anchor="middle" font-family="Inter, Arial" fill="currentColor" font-weight="700">FREE</text></symbol><symbol id="icon-users" viewBox="0 0 24 24"><path fill="currentColor" d="M16 11a4 4 0 1 0-8 0 4 4 0 0 0 8 0Zm-10.5 7a5.5 5.5 0 0 1 11 0V20H5.5v-2Zm13.2-8.6a3 3 0 1 1-4.2 4.2 5 5 0 0 1 4.2-4.2Zm3.8 8.6a4.5 4.5 0 0 0-6.3-4.1 6.5 6.5 0 0 1 1.5 4.1V20h4.8v-2Z"/></symbol><symbol id="icon-rectangle" viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/></symbol></svg></body></html></html>
